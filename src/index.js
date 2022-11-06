@@ -1,11 +1,9 @@
-// Test import of a JavaScript module
-import { example } from '@/js/example'
-
-// Test import of an asset
-import webpackLogo from '@/images/webpack-logo.svg'
-
 // Test import of styles
 import '@/styles/index.scss'
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
+
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -28,21 +26,3 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
-// Appending to the DOM
-const logo = document.createElement('img')
-logo.src = webpackLogo
-
-const heading = document.createElement('h1')
-heading.textContent = example()
-
-// Test a background image url in CSS
-const imageBackground = document.createElement('div')
-imageBackground.classList.add('image')
-
-// Test a public folder asset
-const imagePublic = document.createElement('img')
-imagePublic.src = '/assets/example.png'
-
-const root = document.querySelector('#root')
-root.append(logo, heading, imageBackground, imagePublic)

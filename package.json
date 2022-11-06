@@ -54,6 +54,8 @@
     "url": "git@github.com:taniarascia/webpack-boilerplate"
   },
   "dependencies": {
-    "firebase": "^9.13.0"
+    "bootstrap": "^5.2.2",
+    "firebase": "^9.13.0",
+    "lightgallery": "^2.7.0"
   }
 }

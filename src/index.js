@@ -7,20 +7,20 @@ import * as bootstrap from 'bootstrap'
 import Masonry from 'masonry-layout';
 import * as imagesLoaded from 'imagesloaded';
 
+// init Masonry
+let grid = document.querySelector('.grid');
+if (grid) {
+  let msnry = new Masonry(grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
 
-    // init Masonry
-    var grid = document.querySelector('.grid');
-
-    var msnry = new Masonry(grid, {
-      itemSelector: '.grid-item',
-      columnWidth: 200,
-      percentPosition: true
-    });
-
-    imagesLoaded(grid).on('progress', function () {
-      // layout Masonry after each image loads
-      msnry.layout();
-    });
+  imagesLoaded(grid).on('progress', function () {
+    // layout Masonry after each image loads
+    msnry.layout();
+  });
+}
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";

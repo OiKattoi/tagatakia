@@ -2,7 +2,7 @@
 import '@/styles/index.scss'
 
 // Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
+//import * as bootstrap from 'bootstrap'
 
 import Masonry from 'masonry-layout';
 import * as imagesLoaded from 'imagesloaded';

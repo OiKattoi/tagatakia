@@ -4,6 +4,24 @@ import '@/styles/index.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
+import Masonry from 'masonry-layout';
+import * as imagesLoaded from 'imagesloaded';
+
+
+    // init Masonry
+    var grid = document.querySelector('.grid');
+
+    var msnry = new Masonry(grid, {
+      itemSelector: '.grid-item',
+      columnWidth: 200,
+      percentPosition: true
+    });
+
+    imagesLoaded(grid).on('progress', function () {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";

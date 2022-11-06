@@ -55,6 +55,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
-    "firebase": "^9.13.0"
+    "firebase": "^9.13.0",
+    "imagesloaded": "^5.0.0",
+    "masonry-layout": "^4.2.2"
   }
 }

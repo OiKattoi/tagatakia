@@ -1,14 +1,11 @@
-const fs = require('fs');
-
-for (let i = 221; i < (221-65+105-3); i++) {
-    const data = `{
-        "name": "Ta Gatakia Voucher #${i}",
+{
+        "name": "Ta Gatakia Voucher #228",
         "symbol": "TGK",
         "description": "A voucher for a free mint in the $ETH Ta Gatakia collection",
         "seller_fee_basis_points": 1000,
         "image": "https://tagatakia.com/assets/images/voucher.png",
         "external_url": "https://tagatakia.com",
-        "edition": ${i},
+        "edition": 228,
         "creator": "Cats of Cyprus",
         "attributes": [
           {
@@ -31,13 +28,4 @@ for (let i = 221; i < (221-65+105-3); i++) {
             }
           ]
         }
-      }`;
-
-
-    fs.writeFile(`${i}.json`, data, err => {
-        if (err) {
-            console.error(err);
-        }
-        // file written successfully
-    });
-}
+      }

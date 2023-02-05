@@ -39,7 +39,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Ta Gatakia',
       favicon: paths.src + '/images/favicon.png',
-      template: paths.src + '/template.html', // template file
+      template: paths.src + '/soon.html', // template file
       filename: 'index.html', // output file
     }),
     new HtmlWebpackPlugin({
